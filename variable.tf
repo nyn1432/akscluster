@@ -9,6 +9,12 @@ variable "subscription_id" {
   
 }
 
+variable "acr_name" {
+  type        = string
+  description = "Name of the Azure Container Registry"
+  
+}
+
 variable "location" {
   type        = string
   default     = "East US"
