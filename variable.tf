@@ -15,6 +15,17 @@ variable "acr_name" {
   
 }
 
+variable "storage_account_name" {
+  type        = string
+  description = "Name of the storage account for Terraform state"
+  
+}
+variable "container_name" {
+  type        = string
+  description = "Name of the container in the storage account for Terraform state"
+
+}
+
 variable "location" {
   type        = string
   default     = "East US"
