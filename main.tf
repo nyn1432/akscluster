@@ -40,6 +40,9 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     node_count = var.node_count
     vm_size    = var.vm_size
     vnet_subnet_id = azurerm_subnet.aks_subnet.id
+    auto_scaling_enabled =  true
+    min_count           = 1                  # replace with your minimum node count
+    max_count           = 5
   }
 
   identity {

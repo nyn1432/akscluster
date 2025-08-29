@@ -44,7 +44,7 @@ variable "dns_prefix" {
 
 variable "node_count" {
   type        = number
-  default     = 2
+  default     = 3
   description = "Number of nodes in the default pool"
 }
 
